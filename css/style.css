@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+}
+span{
+    color: rgb(98, 98, 98);
+}
+.header .menuBar{
+    display: flex;
+    align-items: center;
+}
+.header .menuBar span{
+    padding: 0 20px 0 10px;
+    cursor: pointer;
+}
+.header .searchBar{
+    display: flex;
+    align-items: stretch;
+    border: 1px solid lightgray;
+}
+.header .searchBar input[type="text"]{
+    height: 30px;
+    width: 500px;
+    border-style: none;
+    /* cursor: pointer; */
+    border-radius: 0;
+}
+.header .searchBar span{
+    background-color: rgb(221, 221, 221);
+    width: fit-content;
+}
+.header .icons{
+    display: flex;
+    align-items: center;
+}
+.header .icons span{
+    padding-left: 5px;
+}
+.header .menuBar img{
+    height: 50px;
+}
+
+main{
+    display: flex;
+}
+aside.leftSide{
+    width: 230px
+}
+
+aside.leftSide .box{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+aside.leftSide .box .leftside-tab{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+aside.leftSide .box .leftside-tab:hover{
+    background-color: #e5e5e5;
+}
+aside.leftSide .box .leftside-tab span{
+    margin-right: 15px;
+}
+aside.rightSide{
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 15px;
+    border-top: 1px solid rgb(213, 209, 209);
+    overflow-y: scroll;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px 10px;
+    margin-top: 10px;
+}
+.videos .video{
+    width: 310px;
+}
+.videos .video .videoBox{
+    height: 195px;
+    background-image: url(./../images/programming-video.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 310px;
+    /* border: 1pt solid rgb(226, 11, 11); */
+    border-radius: 10px;
+}
+.videos .video .videoDiscription{
+    display: flex;
+}
+.videos .video .videoDiscription img{
+    width: 50px;
+    height: 50px;
+}
+.videos .video .videoDiscription .discription{
+    padding-left: 10px
+}
+.videos .video .videoDiscription .discription .videoName{
+    font-size: large;
+    font-weight: 700;
+}
+.videos .video .videoDiscription .discription .videoChannel{
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.videos .video .videoDiscription .discription .videoBasicInfo{
+    font-size: 15px;
+    font-weight: 100;
+}
